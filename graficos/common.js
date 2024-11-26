@@ -1,7 +1,3 @@
-const getCSS = (variavel) => {
-    return getComputedStyle(document.body).getPropertyValue(variavel)
-}
-
 const tickConfig = {
     color: getCSS('--primary-color'),
     size: 16,
@@ -26,5 +22,3 @@ function incluirTexto(texto) {
     paragrafo.innerHTML = texto
     container.appendChild(paragrafo)
 }
-
-export { getCSS, tickConfig, criarGrafico, incluirTexto }
